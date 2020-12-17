@@ -1,0 +1,14 @@
+<mat-card class="card"><h1>
+    <div><mat-toolbar color="primary" class="div">Distance for Nearest City</mat-toolbar>
+  </div>
+  </h1>
+  <div fxLayoutAlign="center center" fxFlexFill class="main-div">
+      <mat-form-field class="col-sm-6">
+<input #cityName matInput placeholder="Enter City" (input)="changeToggle()"  width=100% class="input" ><div></div>
+</mat-form-field>
+<button  mat-raised-button required color ="primary" type="submit" [disabled]="cityName.value==''"  (click)="getDistance(cityName)">Submit</button>
+
+<h4 *ngIf="toggle">Distance within 100km range ? <p *ngIf="distance <=100">Yes</p>
+<p *ngIf="distance>100">No</p></h4>
+  </div>
+</mat-card>

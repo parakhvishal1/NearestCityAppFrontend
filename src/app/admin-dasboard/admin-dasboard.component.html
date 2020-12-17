@@ -1,0 +1,11 @@
+<h1>
+    <div><mat-toolbar color="primary">Add City</mat-toolbar>
+  </div>
+  </h1>
+  <div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-form-field class="col-sm-6">
+<input #cityName matInput placeholder="Enter City" [value]="city.name" >
+</mat-form-field>
+<button *ngIf="city.name==''" mat-raised-button color ="primary" type="submit" (click)="addCity(cityName)">Add City</button>
+<button *ngIf="city.name!=''" mat-raised-button color ="primary" type="submit" (click)="updateCity(cityName)">Update City</button>
+</div>

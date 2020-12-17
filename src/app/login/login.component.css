@@ -1,0 +1,17 @@
+.main-div mat-card{
+    padding: 0px;
+  }
+  .login-form{
+    padding: 25px;
+  }
+
+  .formfield{
+      padding:20px;
+  }
+
+  .button{
+      margin:20px;
+  }
+  .card{
+      text-align: center;
+  }
