@@ -41,3 +41,9 @@ $ npm run test:cov
 # admin password- Cc@1234
 # user username- user9876
 # user password- User@1234
+
+
+## Login Screen Url
+
+```bash
+http://localhost:4200/login
